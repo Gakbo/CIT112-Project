@@ -1,0 +1,428 @@
+/*
+   ( Ahmed 202110351 )
+    2023/10/30 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'work sans', sans-serif;
+}
+
+:root{
+    --h1-font: 5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1.1rem;
+
+    --bg-color: #121b25;
+    --text-color: #ffffff;
+    --main-color: #1aa090;
+    --other-color: #d6d6d6;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 15%;
+    transition: all .50s ease;
+}
+.logoes img{
+    height: auto;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+}
+#navbar a{
+    padding: 10px 25px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--other-color);
+    transition: all .40s ease;
+}
+#navbar a:hover{
+    color: var(--text-color);
+}
+.h-btn{
+    display: flex;
+    align-items: center;
+}
+#hi-loe2{
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: all .40s ease;
+}
+#hi-loe1{
+    color: var(--other-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+#hi-loe2:hover{
+    transform: translateX(-7px);
+}
+#menu-icones{
+    color: var(--text-color);
+    font-size: 36px;
+    margin-left: 5px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 80px 15% 70px;
+}
+.homey{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4.5rem;
+
+}
+.homey-texting h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.homey-texting p{
+    font-size: var(--p-font);
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 2.5rem;
+}
+#how-search form{
+    position: relative;
+    width: 410px;
+    max-width: 100%;
+}
+#how-search form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 17px 130px 16px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: .70rem;
+}
+#how-search form input:last-child{
+    position: absolute;
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: .70rem;
+    box-shadow: 0px 0px 5px #fff, 0px 0px 15px #868686;
+    top: 6px;
+    right: 6px;
+}
+.homey-imge{
+    width: 640px;
+    height: 640px;
+}
+.homey-imge img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header.sticky{
+    padding: 8px 15%;
+    background: #101821;
+}
+#featureuom{
+    padding: 60px 15% 50px;
+}
+.c-left h2{
+    font-size: var(--h2-font);
+}
+#featureuom-contenting{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.FF img{
+    width: 100%;
+    height: auto;
+}
+
+#propertios-contenting{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4.5rem;
+}
+.rowue{
+    position: relative;
+    cursor: pointer;
+}
+.rowue img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.rowue h5{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.rowue p{
+    font-size: var(--p-font);
+    color: var(--other-color);
+    margin-bottom: 20px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.list a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+}
+.Res-li i{
+    font-size: 18px;
+    color: var(--main-color);
+}
+#center{
+    text-align: center;
+    margin-top: 4rem;
+}
+.b{
+    display: inline-block;
+    padding: 18px 28px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.b:hover{
+    transform: translateY(-7px) scale(0.9);
+}
+
+#abouter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4.5rem;
+}
+.abouter-imge img{
+    height: auto;
+    width: 100%;
+}
+.abouter-texting h2{
+    font-size: var(--h1-font);
+    margin-bottom: 25px;
+}
+.abouter-texting p{
+    font-size: var(--p-font);
+    color: var(--other-color);
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.subscribey-contenting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: url(ss.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 6rem 2rem;
+}
+.subscribey-contenting h2{
+    font-size: var(--h1-font);
+    margin-bottom: 12px;
+}
+.subscribey-contenting p{
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 27px;
+}
+
+#contacter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+.contactt-contentt h4{
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.contactt-contentt li{
+    margin-bottom: 16px;
+}
+.contactt-contentt li a{
+    display: block;
+    color: var(--other-color);
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .45s ease;
+}
+.contactt-contentt li a:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: var(--text-color);
+}
+.contactt-contentt p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin: 30px 0;
+}
+.iconsion a{
+    display: inline-block;
+    font-size: 22px;
+    color: var(--other-color);
+    margin-right: 17px;
+    transition: all .45s ease;
+}
+.iconsion a:hover{
+    transform: translateY(-3px);
+    color: var(--text-color);
+}
+
+@media (max-width: 1790px){
+    header{
+        padding: 18px 6%;
+    }
+    section{
+        padding: 70px 6% 60px;
+    }
+    header.sticky{
+        padding: 7px 6%;
+    }
+    #featureuom{
+        padding: 40px 6% 30px;
+    }
+}
+
+@media (max-width: 1425px){
+    :root{
+        --h1-font: 4.5rem;
+        --h2-font: 2.6rem;
+        --p-font: 1rem;
+    }
+    .homey-imge{
+        width: 540px;
+        height: 540px;
+    }
+    .homey-imge img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    header{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 70px 5% 60px;
+    }
+    header.sticky{
+        padding: 7px 5%;
+    }
+    #featureuom{
+        padding: 40px 5% 30px;
+    }
+}
+
+@media (max-width: 1170px){
+    #menu-icones{
+        display: block;
+    }
+    #navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 270px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #101821;
+        padding: 20px 15px;
+        gap: 0.5rem;
+        text-align: left;
+        transition: all .50s ease;
+        margin-top: -1.4em;
+        margin-right: -63.4px;
+    }
+    #navbar a{
+        display: block;
+        font-size: 20px;
+        padding: 15px;
+    }
+    #navbar.open{
+        right: 0;
+    }
+    :root{
+        --h1-font: 4rem;
+        --h2-font: 2rem;
+        --p-font: 1rem;
+    }
+    .homey{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        height: 120vh;
+    }
+    .homey-texting{
+        order: 2;
+        width: 100%;
+        max-width: 900px;
+    }
+    .homey-imge{
+        width: 480px;
+        height: 480px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    #abouter{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 570px){
+    :root{
+        --h1-font: 3.4rem;
+        --h2-font: 2rem;
+        --p-font: 15px;
+    }
+    .homey{
+        gap: 15px;
+        height: 110vh;
+    }
+    .homey-imge{
+        width: 400px;
+        height: 400px;
+        padding-top: 10px;
+    }
+    .subscribey-contenting{
+        padding: 4rem 1rem;
+    }
+}
