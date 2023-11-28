@@ -1,5 +1,3 @@
-# CIT112-Project
-Just for learning 
 <!DOCTYPE html>
 <html lang="en">
 <head>
